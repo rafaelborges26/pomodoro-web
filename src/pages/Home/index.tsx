@@ -38,9 +38,14 @@ export function Home() {
   const task = watch('task')
   const isSubmitDisabled = !task
 
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    CreateNewCycle(data)
+    reset()
+  }
+
   return (
     <HomeContainer>
-      <form onSubmit={handleSubmit(CreateNewCycle)} action="">
+      <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
         {/* Passar as variaveis do hook form para componentes filhos usarem */}
         <FormProvider {...newCycleForm}>
           <NewCycleForm />

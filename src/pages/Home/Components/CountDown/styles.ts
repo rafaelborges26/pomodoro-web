@@ -9,6 +9,16 @@ export const CountDownContainer = styled.div`
   display: flex;
   gap: 1rem;
 
+  @media screen and (max-width: 820px) {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  @media screen and (max-width: 620px) {
+    font-size: 3rem;
+    line-height: 1.5rem;
+  }
+
   span {
     background: ${(props) => props.theme['gray-700']};
     padding: 2rem 1rem;

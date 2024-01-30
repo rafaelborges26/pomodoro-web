@@ -19,6 +19,11 @@ export const CountDownContainer = styled.div`
     line-height: 1.5rem;
   }
 
+  @media screen and (max-width: 520px) {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
   span {
     background: ${(props) => props.theme['gray-700']};
     padding: 2rem 1rem;

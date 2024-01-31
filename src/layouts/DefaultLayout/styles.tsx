@@ -10,7 +10,8 @@ export const LayoutContainer = styled.div`
   border-radius: 8px;
   flex-direction: column;
 
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 1020px) {
     padding: 1rem;
+    height: 100%;
   }
 `

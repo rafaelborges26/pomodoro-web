@@ -56,6 +56,10 @@ export const HistoryList = styled.div`
       &:first-child {
         padding-left: 1.5rem;
         width: 50%;
+
+        @media screen and (max-width: 620px) {
+          width: 30%;
+        }
       }
 
       &:last-child {

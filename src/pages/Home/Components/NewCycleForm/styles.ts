@@ -37,6 +37,7 @@ const BaseInput = styled.input`
 
   @media screen and (max-width: 620px) {
     height: 1.5rem;
+    font-size: 0.5rem;
   }
 `
 
